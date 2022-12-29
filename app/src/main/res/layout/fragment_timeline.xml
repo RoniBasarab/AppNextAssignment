@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.views.fragments.TimelineFragment"
+    android:orientation="vertical"
+    android:id="@+id/timeline_frag">
+
+    <TextView
+        android:id="@+id/back_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/timeline"
+        android:textColor="@color/main_title"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        app:drawableLeftCompat="@drawable/vector" />
+
+    <TextView
+        android:id="@+id/current_month_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Month"
+        android:layout_margin="15dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_margin="3dp"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+
+</LinearLayout>
